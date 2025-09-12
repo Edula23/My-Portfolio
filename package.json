@@ -8,8 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@flaticon/flaticon-uicons": "^3.3.1",
@@ -37,6 +36,5 @@
     "tailwindcss": "^4.1.11",
     "typescript-eslint": "^8.35.1",
     "vite": "^7.0.4"
-  },
-  "homepage": "https://github.com/Edula23/My-Portfolio"
+  }
 }

@@ -1,7 +1,7 @@
 import me2 from '../assets/mePortfolio2.png';
 export default function AboutSection () {
   return (
-    <section>
+    <section id="about">
       <div className="flex flex-row items-center justify-between gap-6 px-24 ">
         {/* Image */}
         <div className=' mr-auto'>
