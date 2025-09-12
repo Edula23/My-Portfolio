@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import travelHabesha from "../assets/travelHabesha.png";
-import campusGebeta from "../assets/campusGebeta.png";
+import campusGebeta from "../assets/CampusGebeta.png";
 import alikoContech from "../assets/alikoCon-Tech.png";
 export default function WorksSection() {
   return (
