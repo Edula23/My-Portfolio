@@ -5,9 +5,9 @@ import Contact from "./components/contact";
 function App() {
   return (
     <div className="bg-black text-white">
-      <Hero />
-      <About />
+      <Hero />      
       <Works />
+      <About />
       <Contact />
     </div>
   );

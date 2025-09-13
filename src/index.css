@@ -1,8 +1,26 @@
 @import "tailwindcss";
 body{
    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lora', serif;
+
+/* Custom Swiper Navigation Arrow Colors */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4AFF6B !important; /* Green color to match your theme */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #4AFF6B !important;
+}
+
+/* Custom Swiper Pagination Dot Colors */
+.swiper-pagination-bullet {
+  background: #B3B3B3 !important; /* Gray color for inactive dots */
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4AFF6B !important; /* Green color for active dot */
+  opacity: 1 !important;
 }
