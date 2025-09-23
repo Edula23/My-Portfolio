@@ -1,12 +1,14 @@
 @import "tailwindcss";
 body{
-   font-family: 'DM Sans', sans-serif;
+   font-family: 'Montserrat', sans-serif;
 }
 
 /* Custom Swiper Navigation Arrow Colors */
 .swiper-button-next,
 .swiper-button-prev {
   color: #4AFF6B !important; /* Green color to match your theme */
+  width: 10px !important;
+  height: 10px !important;
 }
 
 .swiper-button-next:after,
@@ -18,6 +20,7 @@ body{
 .swiper-pagination-bullet {
   background: #B3B3B3 !important; /* Gray color for inactive dots */
   opacity: 0.5 !important;
+
 }
 
 .swiper-pagination-bullet-active {

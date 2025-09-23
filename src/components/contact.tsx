@@ -47,28 +47,28 @@ export default function ContactForm() {
         <div className="flex flex-col justify-center space-y-6 items-start ml-40">
           <a
             href="https://www.linkedin.com/in/eden-alemayehu-886991294/"
-            className="flex items-center space-x-3 text-green-500 hover:underline"
+            className="flex items-center space-x-3 text-white hover:underline"
           >
             <img src={linkedin} alt="LinkedIn" className="w-10 h-10" />
-            <span>LinkedIn</span>
+            <span >LinkedIn</span>
           </a>
           <a
             href="https://github.com/Edula23/"
-            className="flex items-center space-x-3 text-green-500 hover:underline"
+            className="flex items-center space-x-3 text-white hover:underline"
           >
             <img src={github} alt="Github" className="w-10 h-10" />
             <span>Github</span>
           </a>
           <a
             href="mailto:edengebeta210@gmail.com"
-            className="flex items-center space-x-3 text-green-500 hover:underline"
+            className="flex items-center space-x-3 text-white hover:underline"
           >
             <img src={email} alt="E-Mail" className="w-10 h-10" />
             <span>E-Mail</span>
           </a>
           <a
             href="https://x.com/edenAlemayehuu/"
-            className="flex items-center space-x-3 text-green-500 hover:underline"
+            className="flex items-center space-x-3 text-white hover:underline"
           >
             <img src={x} alt="X" className="w-10 h-10" />
             <span>X</span>
