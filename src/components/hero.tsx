@@ -13,8 +13,8 @@ export default function HeroSection() {
             Hey There, <br />
             I'm <span className="text-[#4AFF6B] font-bold">Eden</span>
           </h1>
-          <a href="../public/Eden_A_Gebeta_Resume.pdf" download="Eden_A_Gebeta_Resume.pdf">
-            <button className="bg-[#4AFF6B] w-32 text-black py-2 rounded-full font-bold text-sm hover:bg-[#133737] hover:text-white transition-colors ">
+          <a href="../public/Eden_A_Gebeta_Resume_(1).pdf" download="Eden_A_Gebeta_Resume.pdf">
+            <button className="bg-[#4AFF6B] w-32 text-black py-2 rounded-full font-bold text-sm hover:bg-[#133737] hover:text-white hover:cursor-pointer transition-colors ">
             Resume
           </button>
           </a>

@@ -60,7 +60,7 @@ export default function WorksSection({
           </div>
         </div>
         <div className="place-items-center">
-          <p className="text-2xl text-[#B3B3B3]">UX/UI</p>
+          <p className="text-2xl text-[#B3B3B3]">Front-End Development</p>
           <div className="mt-4 w-[800px] min-h-screen items-center">
             <Swiper
               speed={1500} // 1.5 seconds for each slide transition
