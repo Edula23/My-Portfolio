@@ -60,14 +60,14 @@ export default function WorksSection({
                         </p>
                       </div>
                       <div className="flex flex-row justify-between w-96 pt-4 ">
-                        <Link key={index} to={link}>
-                        <button className="bg-[#133737] w-16 rounded-full py-1 font-medium text-sm hover:bg-[#133737] border-1 border-[#4AFF6B] hover:text-white hover:cursor-pointer transition-colors text-white ">
+                        <Link key={index} to={link} className="">
+                        <button className="hidden bg-[#133737] w-16 rounded-full py-1 font-medium text-sm hover:bg-[#133737] border-1 border-[#4AFF6B] hover:text-white hover:cursor-pointer transition-colors text-white ">
                           Details
                         </button>
                         </Link>
                         <Link key={index} to={link}>
                         <button className="bg-[#133737] w-16 rounded-full font-medium text-sm hover:bg-[#133737] border-1 border-[#4AFF6B] hover:text-white hover:cursor-pointer transition-colors text-white py-1 ">
-                          Code
+                          Details
                         </button>
                         </Link>
                       </div>
