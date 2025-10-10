@@ -7,13 +7,14 @@ body{
 .swiper-button-next,
 .swiper-button-prev {
   color: #4AFF6B !important; /* Green color to match your theme */
-  width: 10px !important;
-  height: 10px !important;
+  font-size: 18px !important;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
+  font-size: 18px !important;
   color: #4AFF6B !important;
+  line-height: 1;
 }
 
 /* Custom Swiper Pagination Dot Colors */

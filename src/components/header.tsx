@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <div>
       <nav
-        className={`flex fixed justify-between items-center px-16 py-3 w-full z-50 ${
+        className={`flex fixed justify-between items-center px-16 py-1.5 w-full z-50 ${
           scrolled ? "bg-[#133737]" : "bg-transparent"
         }`}
       >

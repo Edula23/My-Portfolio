@@ -10,6 +10,7 @@ import campusGebeta from "./assets/CampusGebeta.png";
 import CampusGebeta from "./Pages/campusGebeta";
 import alikoContech from "./assets/alikoCon-Tech.png";
 import AlikoConTech from "./Pages/alikoConTech";
+import closetMatch from "./assets/portfolioImgClosetMatch.png";
 function App() {
   return (
     <BrowserRouter>
@@ -20,10 +21,16 @@ function App() {
           <>
       <Hero />
       <Works 
-      projects={[
+      uxiProjects={[
+          { title: "Travel Habesha", image: travelHabesha, description: "This travel website design blends modern  UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/travel-habesha" },
+          { title: "Campus Gebeta", image: campusGebeta, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/campus-gebeta" },
+          { title: "Aliko Con-Tech", image: alikoContech, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/aliko-con-tech" }
+        ]}
+      frEnProjects={[
           { title: "Travel Habesha", image: travelHabesha, description: "This travel website design blends modern  UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/travel-habesha" },
           { title: "Campus Gebeta", image: campusGebeta, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/campus-gebeta" },
           { title: "Aliko Con-Tech", image: alikoContech, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/aliko-con-tech" },
+          { title: "Closet Match", image: closetMatch, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/closet-match" },
         ]}/>
       <About />
       <Contact />
