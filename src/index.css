@@ -19,7 +19,7 @@ body{
 
 /* Custom Swiper Pagination Dot Colors */
 .swiper-pagination-bullet {
-  background: #B3B3B3 !important; /* Gray color for inactive dots */
+  background: #000000 !important; /* Gray color for inactive dots */
   opacity: 0.5 !important;
 
 }

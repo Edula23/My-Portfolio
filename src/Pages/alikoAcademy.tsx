@@ -87,7 +87,7 @@ export default function AlikoAcademy() {
           className="w-40% rounded-lg shadow-lg"
         />
       </div>
-      <div className="overflow-hidden relative w-full bg-gray-100 py-4">
+      <div className="overflow-hidden relative w-full bg-black py-4">
       <div
         className="flex animate-scroll-x"
         style={{
