@@ -18,9 +18,8 @@ export default function Header() {
 
   return (
     <>
-
       <nav
-        className={`flex fixed justify-between items-center px-16 py-1.5 w-full z-50 ${
+        className={`hidden md:flex fixed justify-between items-center px-16 py-1.5 w-full z-50 ${
           scrolled ? "bg-[#133737]" : "bg-transparent"
         } ${isHome ? "hidden" : ""} `}
       >
@@ -44,6 +43,11 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+        <nav className="flex justify-between md:hidden">
+          <img src={E} alt="Logo" className="w-16 h-16" />
+          {/* <img src={E} alt="humberger menu" className="w-16 h-16" /> */}
+          
+        </nav>
       </>
   );
 }
