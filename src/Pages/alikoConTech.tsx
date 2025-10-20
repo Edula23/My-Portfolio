@@ -1,28 +1,24 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { ArrowLeft } from "lucide-react";
 import E from "../assets/E.png";
-import img1 from "../assets/alikoAca1.png";
-import img2 from "../assets/alikoAca2.png";
+import img1 from "../assets/contechmock1.png";
+import img2 from "../assets/contechmock2.png";
 export default function AlikoAcademy() {
-  const images = [
-    img1,
-    img1,
-    img2,
-    img1,
-    img2,
-  ];
+  const images = [img1, img1, img2, img1, img2];
 
   // Duplicate images to make it seamless
   const scrollImages = [...images, ...images];
   return (
     <div className="min-h-screen  bg-black text-white flex flex-col relative">
       {/* Back to Projects */}
-      <div className="flex flex-row">
-        <img src={E} alt="My Logo" className={`w-18 h-18 mt-4 ml-4 pl-4`} />
+      <div className="flex flex-row items-center">
+        <Link smooth to="/#works" className="hover:cursor-pointer">
+          <img src={E} alt="My Logo" className={`w-18 h-18 mt-4 ml-4 pl-4`} />
+        </Link>
         <Link
           smooth
           to="/#works"
-          className="mt-auto ml-auto px-6 flex flex-row items-center text-green-400 hover:text-white space-x-2 hover:cursor-pointer"
+          className="ml-auto px-6 flex flex-row items-center text-green-400 hover:text-white space-x-2 hover:cursor-pointer"
         >
           <ArrowLeft className="w-5 h-5" />
           <span>Back to Projects</span>
@@ -31,7 +27,7 @@ export default function AlikoAcademy() {
       {/* Project Info */}
       <div className="grid grid-cols-2 items-center mb-10">
         <div className="space-y-60 mt-16 ml-10">
-          <h1 className="text-8xl font-serif">Aliko Academy</h1>
+          <h1 className="text-8xl">Aliko Con-Tech</h1>
           <a
             href="#"
             target="_blank"
@@ -88,22 +84,22 @@ export default function AlikoAcademy() {
         />
       </div>
       <div className="overflow-hidden relative w-full bg-black py-4">
-      <div
-        className="flex animate-scroll-x"
-        style={{
-          width: `${scrollImages.length * 400}px`, // each image width * total
-        }}
-      >
-        {scrollImages.map((src, i) => (
-          <img
-            key={i}
-            src={src}
-            alt={`scroll-img-${i}`}
-            className="w-[400px] h-[300px] object-cover rounded-lg mx-2"
-          />
-        ))}
+        <div
+          className="flex animate-scroll-x"
+          style={{
+            width: `${scrollImages.length * 400}px`, // each image width * total
+          }}
+        >
+          {scrollImages.map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt={`scroll-img-${i}`}
+              className="w-[400px] h-[300px] object-cover rounded-lg mx-2"
+            />
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 }

@@ -18,7 +18,9 @@ export default function AlikoAcademy() {
     <div className="min-h-screen  bg-black text-white flex flex-col relative">
       {/* Back to Projects */}
       <div className="flex flex-row">
-        <img src={E} alt="My Logo" className={`w-18 h-18 mt-4 ml-4 pl-4`} />
+        <Link smooth to="/#works" className="hover:cursor-pointer">
+          <img src={E} alt="My Logo" className={`w-18 h-18 mt-4 ml-4 pl-4 `} />
+        </Link>
         <Link
           smooth
           to="/#works"
