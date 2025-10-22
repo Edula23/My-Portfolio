@@ -5,8 +5,8 @@ import x from "../assets/twitter.png"
 
 export default function ContactForm() {
   return (
-    <div id="contact" className="bg-black min-h-screen flex items-center justify-center py-6 px-20">
-      <div className="grid md:grid-cols-2 gap-8 w-full items-center text-white">
+    <div id="contact" className="bg-black min-h-screen flex items-center justify-center md:py-6 md:px-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 w-full  items-start md:items-center text-white">
         {/* Left: Form */}
         <div className="items-center">
           <h2 className="text-2xl font-semibold mb-6">Reach Out</h2>
@@ -44,7 +44,7 @@ export default function ContactForm() {
         </div>
 
         {/* Right: Social Links */}
-        <div className="flex flex-col justify-center space-y-6 items-start ml-40">
+        <div className="flex flex-col justify-center mt-16 md:mt-0 space-y-6 items-start md:ml-40">
           <a
             href="https://www.linkedin.com/in/eden-alemayehu-886991294/"
             className="flex items-center space-x-3 text-white hover:underline"
