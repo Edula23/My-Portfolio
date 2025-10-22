@@ -2,6 +2,10 @@
 html, body{
    font-family: 'DM-Sans', sans-serif;
    background-color: #000000;
+   overflow-x: hidden;
+   width: 100%;
+   padding-left: 8px;
+   padding-right: 8px;
 }
 
 /* Custom Swiper Navigation Arrow Colors */
@@ -9,6 +13,7 @@ html, body{
 .swiper-button-prev {
   color: #4AFF6B !important; /* Green color to match your theme */
   font-size: 18px !important;
+  display: none !important;
 }
 
 .swiper-button-next:after,
@@ -28,6 +33,12 @@ html, body{
 .swiper-pagination-bullet-active {
   background: #4AFF6B !important; /* Green color for active dot */
   opacity: 1 !important;
+}
+@media  (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex !important;
+  }
 }
 @keyframes scroll-x {
   0% {
