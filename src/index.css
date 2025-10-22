@@ -1,6 +1,7 @@
 @import "tailwindcss";
-body{
+html, body{
    font-family: 'DM-Sans', sans-serif;
+   background-color: #000000;
 }
 
 /* Custom Swiper Navigation Arrow Colors */

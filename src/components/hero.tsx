@@ -6,7 +6,7 @@ export default function HeroSection() {
   const {isMobile} = useWindowSize();
   const imgSrc = isMobile ? mePorMob : me;
   return (
-    <section className="bg-black text-white min-h-screen flex flex-col">    
+    <section className="bg-black text-white min-h-screen w-full flex flex-col">    
 
       {/* Hero Section */}
       <div id="hero" className="flex flex-col mt-16 md:flex-row md:mt-40 md:gap-12  mx-auto">
