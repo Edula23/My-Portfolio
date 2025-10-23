@@ -5,7 +5,7 @@ import x from "../assets/twitter.png"
 
 export default function ContactForm() {
   return (
-    <div id="contact" className="bg-black min-h-screen flex items-center justify-center md:py-6 md:px-20">
+    <div id="contact" className="bg-black mt-10 mb-10 flex items-center justify-center md:py-6 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 w-full  items-start md:items-center text-white">
         {/* Left: Form */}
         <div className="items-center">

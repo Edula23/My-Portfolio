@@ -4,6 +4,7 @@ import About from "./components/about";
 import Works from "./components/works";
 import Contact from "./components/contact";
 import Header from "./components/header";
+import Footer from "./components/footer";
 import travelHabesha from "./assets/travelHabesha.png";
 import TravelHabesha from "./Pages/travelHabesha";
 import campusGebeta from "./assets/CampusGebeta.png";
@@ -37,6 +38,7 @@ function App() {
         ]}/>
       <About />
       <Contact />
+      <Footer />
       </>
         } />
         <Route path="/travel-habesha" element={<TravelHabesha />} />
