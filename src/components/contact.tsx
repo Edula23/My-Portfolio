@@ -10,7 +10,7 @@ export default function ContactForm() {
         {/* Left: Form */}
         <div className="items-center">
           <h2 className="text-2xl font-semibold mb-6">Reach Out</h2>
-          <form className="space-y-4" action="https://formspree.io/f/mvgbykqb" method="POST">
+          <form className="flex flex-col space-y-4" action="https://formspree.io/f/mvgbykqb" method="POST">
               <input
                 type="text"
                 name="name"
@@ -36,7 +36,7 @@ export default function ContactForm() {
             
             <button
               type="submit"
-              className="bg-green-500 text-black px-6 py-2 rounded-full hover:bg-green-400 hover:cursor-pointer transition"
+              className="bg-green-500 ml-auto px-4 py-1 md:ml-0 text-black md:px-6 md:py-2 rounded-full w-1/6 hover:bg-green-400 hover:cursor-pointer transition"
             >
               Send
             </button>
@@ -44,35 +44,70 @@ export default function ContactForm() {
         </div>
 
         {/* Right: Social Links */}
-        <div className="flex flex-col justify-center mt-16 md:mt-0 space-y-6 items-start md:ml-40">
+        <div className="hidden md:flex flex-col justify-end w-1/2 ml-auto mt-16 md:mt-0 space-y-6 items-start md:ml-40">
           <a
             href="https://www.linkedin.com/in/eden-alemayehu-886991294/"
-            className="flex items-center space-x-3 text-white hover:underline"
+            className="hidden md:flex items-center space-x-3 text-white hover:underline"
           >
             <img src={linkedin} alt="LinkedIn" className="w-10 h-10" />
             <span >LinkedIn</span>
           </a>
           <a
+            href="https://www.linkedin.com/in/eden-alemayehu-886991294/"
+            className="md:hidden flex items-center w-1/2 justify-between text-white hover:underline"
+          >
+            <span>LinkedIn</span>
+            <img src={linkedin} alt="LinkedIn" className="w-10 h-10" />
+          </a>
+          <a
             href="https://github.com/Edula23/"
-            className="flex items-center space-x-3 text-white hover:underline"
+            className="hidden md:flex items-center space-x-3 text-white hover:underline"
           >
             <img src={github} alt="Github" className="w-10 h-10" />
             <span>Github</span>
           </a>
           <a
+            href="https://github.com/Edula23/"
+            className="md:hidden flex items-center w-1/2 justify-between space-x-3 text-white hover:underline"
+          >
+            <span>Github</span>
+            <img src={github} alt="Github" className="w-10 h-10" />
+          </a>
+          <a
             href="mailto:edengebeta210@gmail.com"
-            className="flex items-center space-x-3 text-white hover:underline"
+            className="hidden md:flex items-center space-x-3 text-white hover:underline"
           >
             <img src={email} alt="E-Mail" className="w-10 h-10" />
             <span>E-Mail</span>
           </a>
           <a
+            href="mailto:edengebeta210@gmail.com"
+            className="flex md:hidden items-center w-1/2 justify-between text-white hover:underline"
+          >
+            <span>E-Mail</span>
+            <img src={email} alt="E-Mail" className="w-10 h-10" />
+            
+          </a>
+          <a
             href="https://x.com/edenAlemayehuu/"
-            className="flex items-center space-x-3 text-white hover:underline"
+            className="hidden md:flex items-center space-x-3 text-white hover:underline"
           >
             <img src={x} alt="X" className="w-10 h-10" />
             <span>X</span>
           </a>
+          <a
+            href="https://x.com/edenAlemayehuu/"
+            className="md:hidden flex w-1/2 justify-between items-center text-white hover:underline"
+          >
+            <span>X</span>
+            <img src={x} alt="X" className="w-10 h-10" />            
+          </a>
+        </div>
+        <div className="flex flex-row w-full justify-between mt-10 md:hidden">
+          <img src={linkedin} alt="LinkedIn" className="w-10 h-10" />
+          <img src={github} alt="Github" className="w-10 h-10" />
+          <img src={email} alt="E-Mail" className="w-10 h-10" />
+          <img src={x} alt="X" className="w-10 h-10" />
         </div>
       </div>
     </div>

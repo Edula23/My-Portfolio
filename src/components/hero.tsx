@@ -32,11 +32,16 @@ export default function HeroSection() {
             className="mb-0 p-0 object-contain rounded-lg w-[500px]"
           />
         </div>
-        <div className="md:w-[400px] md:flex md:flex-col justify-between md:mb-20">
+        <div className="md:w-[400px] md:flex md:flex-col md:justify-between md:mb-20">
           <p className="text-gray-400 text-2xl mt-10">
             I'm a UX/UI Designer <br className="hidden md:block" /> and Front-End Developer <br className="hidden md:block"/> based in Ethiopia
           </p>
-          <p className="text-gray-400 text-2xl mt-10"> edengebeta210@gmail.com </p>
+          <a href="../public/Eden_A_Gebeta_Resume_(1).pdf" download="Eden_A_Gebeta_Resume.pdf" className=" md:hidden">
+            <button className="bg-[#4AFF6B] mt-4 w-32 text-black py-2 rounded-full font-bold text-sm hover:bg-[#133737] hover:text-white hover:cursor-pointer transition-colors ">
+            Resume
+          </button>
+          </a>
+          <p className="hidden md:block text-gray-400 text-2xl md:mt-10"> edengebeta210@gmail.com </p>
         </div>
       </div>
     </section>
