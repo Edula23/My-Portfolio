@@ -18,7 +18,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="bg-black text-white">
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={
           <>
