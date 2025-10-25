@@ -1,8 +1,8 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { ArrowLeft } from "lucide-react";
 import E from "../assets/E.png";
-import img1 from "../assets/contechmock1.png";
-import img2 from "../assets/contechmock2.png";
+import img1 from "../assets/trahabM1.png";
+import img2 from "../assets/trahabM2.png";
 export default function AlikoConTech() {
   
   const images = [img1, img1, img2, img1, img2];
