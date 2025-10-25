@@ -9,7 +9,7 @@ export default function AlikoHubGeneral() {
   // Duplicate images to make it seamless
   const scrollImages = [...images, ...images];
   return (
-    <div className="min-h-screen  bg-black text-white flex flex-col relative">
+    <div className="min-h-screen  bg-[#000000] text-white flex flex-col relative">
       {/* Back to Projects */}
       {/* <div className="flex flex-row">
         <Link smooth to="/#works" className="hover:cursor-pointer">

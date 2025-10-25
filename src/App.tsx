@@ -15,13 +15,14 @@ import alikoContech from "./assets/alikoCon-Tech.png";
 import AlikoConTech from "./Pages/alikoConTech";
 import AlikoAcademy from "./Pages/alikoAcademy";
 import closetMatch from "./assets/portfolioImgClosetMatch.png";
-import AlikoHub from "./Pages/alikoGeneral";
+import AlikoEvents from "./Pages/alikoEvents";
+import alikoEv from "./assets/alikoEvents2.png";
 import AlikoHubGeneral from "./Pages/alikoGeneral";
 function App() {
   return (
     <BrowserRouter>
     <div className="bg-black text-white">
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={
           <>
@@ -32,7 +33,8 @@ function App() {
           { title: "Aliko Academy", image: alikoAcademy, description: "This travel website design blends modern  UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/aliko-academy" },
           { title: "Campus Gebeta", image: campusGebeta, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/campus-gebeta" },
           { title: "Aliko Con-Tech", image: alikoContech, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/aliko-con-tech" },
-          { title: "AlikoHub ", image: alikoHub, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/alikoHub" }
+          { title: "AlikoHub ", image: alikoHub, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/alikoHub" },
+          { title: "Aliko Events ", image: alikoEv, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/alikoEvents" }
         ]}
       frEnProjects={[
           { title: "Travel Habesha", image: travelHabesha, description: "This travel website design blends modern  UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/travel-habesha" },
@@ -50,6 +52,7 @@ function App() {
         <Route path="/aliko-con-tech" element={<AlikoConTech />} />
         <Route path="/aliko-academy" element={<AlikoAcademy />} />
         <Route path="/alikoHub" element={<AlikoHubGeneral />} />
+        <Route path="/alikoEvents" element={<AlikoEvents />} />
       </Routes>
     </div>
     </BrowserRouter>
