@@ -1,6 +1,4 @@
-import { HashLink as Link } from "react-router-hash-link";
-import { ArrowLeft } from "lucide-react";
-import E from "../assets/E.png";
+
 import img1 from "../assets/contechmock1.png";
 import img2 from "../assets/contechmock2.png";
 export default function AlikoConTech() {
@@ -10,20 +8,7 @@ export default function AlikoConTech() {
   const scrollImages = [...images, ...images];
   return (
     <div className="min-h-screen  bg-[#000000] text-white flex flex-col relative">
-      {/* Back to Projects */}
-      {/* <div className="flex flex-row">
-        <Link smooth to="/#works" className="hover:cursor-pointer">
-          <img src={E} alt="My Logo" className={`w-18 h-18 mt-4 ml-4 pl-4 `} />
-        </Link>
-        <Link
-          smooth
-          to="/#works"
-          className="mt-auto ml-auto px-6 flex flex-row items-center text-green-400 hover:text-white space-x-2 hover:cursor-pointer"
-        >
-          <ArrowLeft className="w-5 h-5" />
-          <span>Back to Projects</span>
-        </Link>
-      </div> */}
+      
       {/* Project Info */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-10">
         <div className=" md:space-y-60 md:mt-16 md:ml-10">
