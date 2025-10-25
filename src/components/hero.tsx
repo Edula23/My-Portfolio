@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import me from "../assets/mePortfolio.png";
 import useWindowSize from "../hooks/useWindowSize"
 import mePorMob from "../assets/mePortfolioMob.png"
@@ -6,6 +7,12 @@ export default function HeroSection() {
   const {isMobile} = useWindowSize();
   const imgSrc = isMobile ? mePorMob : me;
   return (
+    <motion.div
+    initial={{opacity:0, y:80}}
+    whileInView={{opacity:1, y:30}}
+    transition={{duration:2, ease:"easeOut"}}
+    viewport={{once:true}}
+    >
     <section className="bg-black text-white min-h-screen w-full flex flex-col">    
 
       {/* Hero Section */}
@@ -45,5 +52,6 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
+    </motion.div>
   );
 }

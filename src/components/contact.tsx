@@ -2,9 +2,16 @@ import linkedin from "../assets/linkedin.png"
 import github from "../assets/github.png"
 import email from "../assets/email.png"
 import x from "../assets/twitter.png"
+import { motion } from "framer-motion";
 
 export default function ContactForm() {
   return (
+    <motion.div
+    initial={{opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{duration: 1, ease:"easeOut"}}
+    viewport={{once:true}}
+    >
     <div id="contact" className="bg-black mt-10 mb-10 flex items-center justify-center md:py-6 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 w-full  items-start md:items-center text-white">
         {/* Left: Form */}
@@ -111,5 +118,6 @@ export default function ContactForm() {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 }

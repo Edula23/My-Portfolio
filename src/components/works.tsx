@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+import { motion } from "framer-motion";
 export default function WorksSection({
   uxiProjects,
   frEnProjects,
@@ -23,6 +24,12 @@ export default function WorksSection({
   }[];
 }) {
   return (
+    <motion.div
+    initial={{opacity:0, y:80}}
+    whileInView={{opacity:1, y:0}}
+    transition={{duration:2, ease:"easeOut"}}
+    viewport={{once:true}}
+    >
     <section id="works" className="md:mx-16 md:px-16 md:mt-12 items-center">
       <h2 className="text-6xl text-start md:text-center">My Works</h2>
       <div className="grid grid-cols-1 mt-6 items-center md:grid-cols-2 lg:grid-cols-2 gap-30">
@@ -186,5 +193,6 @@ export default function WorksSection({
         </div>
       </div>
     </section>
+    </motion.div>
   );
 }

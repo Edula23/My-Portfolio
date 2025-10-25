@@ -1,6 +1,14 @@
+import {motion} from 'framer-motion';
 import me2 from '../assets/mePortfolio2.png';
 export default function AboutSection () {
   return (
+    <motion.div
+    initial={{opacity:0, y:80}}
+    whileInView={{opacity:1, y:0}}
+    transition={{duration:2, ease:"easeOut"}}
+    viewport={{once:true}}
+    >
+
     <section id="about">
       <div className="flex flex-col md:flex-row items-center md:justify-between md:gap-6 md:px-24 ">
         {/* Image */}
@@ -16,5 +24,6 @@ export default function AboutSection () {
         </div>
       </div>
     </section>
+    </motion.div>
   );
 }
