@@ -37,12 +37,14 @@ export default function WorksSection({
           <p className="text-2xl text-[#B3B3B3]">UX/UI Design</p>
           <div className="hidden md:block md:mt-4 md:w-[600px] md:min-h-screen items-center md:pt-3">
             <Swiper
-              speed={1500} // 1.5 seconds for each slide transition
+              slidesPerView={1}
+              speed={1000} // 1.5 seconds for each slide transition
               modules={[EffectCube, Navigation, Autoplay]}
               effect="cube"
               navigation
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop={true}
+              spaceBetween={30}
               cubeEffect={{
                 shadow: true,
                 slideShadows: true,

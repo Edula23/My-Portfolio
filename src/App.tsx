@@ -16,7 +16,7 @@ import AlikoConTech from "./Pages/alikoConTech";
 import AlikoAcademy from "./Pages/alikoAcademy";
 import closetMatch from "./assets/portfolioImgClosetMatch.png";
 import AlikoEvents from "./Pages/alikoEvents";
-import alikoEv from "./assets/alikoEvents2.png";
+import alikoEv from "./assets/alikoEvents1S.jpg";
 import AlikoHubGeneral from "./Pages/alikoGeneral";
 function App() {
   return (
@@ -29,12 +29,13 @@ function App() {
       <Hero />
       <Works 
       uxiProjects={[
+        { title: "Aliko Events ", image: alikoEv, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/alikoEvents" },
           { title: "Travel Habesha", image: travelHabesha, description: "This travel website design blends modern  UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/travel-habesha" },
           { title: "Aliko Academy", image: alikoAcademy, description: "This travel website design blends modern  UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/aliko-academy" },
           { title: "Campus Gebeta", image: campusGebeta, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/campus-gebeta" },
           { title: "Aliko Con-Tech", image: alikoContech, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/aliko-con-tech" },
-          { title: "AlikoHub ", image: alikoHub, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/alikoHub" },
-          { title: "Aliko Events ", image: alikoEv, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/alikoEvents" }
+          { title: "AlikoHub ", image: alikoHub, description: "This travel website design blends modern UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/alikoHub" }
+          
         ]}
       frEnProjects={[
           { title: "Travel Habesha", image: travelHabesha, description: "This travel website design blends modern  UI/UX principles with cultural flair, offering users a seamless journey from exploration to booking.",  link: "/travel-habesha" },

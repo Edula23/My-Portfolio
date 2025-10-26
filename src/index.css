@@ -7,6 +7,14 @@ html, body{
    padding-left: 8px;
    padding-right: 8px;
 }
+.swiper-slide {
+  opacity: 0!important;
+  transition: opacity 800ms ease-in-out !important; 
+}
+
+.swiper-slide-active {
+  opacity: 1!important;
+}
 
 /* Custom Swiper Navigation Arrow Colors */
 .swiper-button-next,
