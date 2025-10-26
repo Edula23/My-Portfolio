@@ -38,7 +38,7 @@ export default function WorksSection({
           <div className="hidden md:block md:mt-4 md:w-[600px] md:min-h-screen items-center md:pt-3">
             <Swiper
               slidesPerView={1}
-              speed={1000} // 1.5 seconds for each slide transition
+              speed={1500} // 1.5 seconds for each slide transition
               modules={[EffectCube, Navigation, Autoplay]}
               effect="cube"
               navigation
