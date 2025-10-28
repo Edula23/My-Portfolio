@@ -12,7 +12,7 @@ export default function ContactForm() {
     transition={{duration: 1, ease:"easeOut"}}
     viewport={{once:true}}
     >
-    <div id="contact" className="bg-black mt-10 mb-10 flex items-center justify-center md:py-6 md:px-20">
+    <div id="contact" className="bg-black mt-10 mb-10 flex items-center justify-center md:py-6 md:px-20 md:mt-30">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 w-full  items-start md:items-center text-white">
         {/* Left: Form */}
         <div className="items-center">
@@ -51,7 +51,7 @@ export default function ContactForm() {
         </div>
 
         {/* Right: Social Links */}
-        <div className="hidden md:flex flex-col justify-end w-1/2 ml-auto mt-16 md:mt-0 space-y-6 items-start md:ml-40">
+        <div className="hidden md:flex flex-col justify-end md:w-1/2 ml-auto mt-16 md:mt-0 space-y-6 items-start md:ml-0">
           <a
             href="https://www.linkedin.com/in/eden-alemayehu-886991294/"
             className="hidden md:flex items-center space-x-3 text-white hover:underline"

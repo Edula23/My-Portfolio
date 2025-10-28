@@ -13,7 +13,7 @@ export default function HeroSection() {
     transition={{duration:2, ease:"easeOut"}}
     viewport={{once:true}}
     >
-    <section className="bg-black text-white min-h-screen w-full flex flex-col">    
+    <section className="bg-black text-white  w-full flex flex-col ">    
 
       {/* Hero Section */}
       <div id="hero" className="flex flex-col mt-16 md:flex-row md:mt-40 md:gap-12  mx-auto">

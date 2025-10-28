@@ -30,12 +30,12 @@ export default function WorksSection({
     transition={{duration:2, ease:"easeOut"}}
     viewport={{once:true}}
     >
-    <section id="works" className="md:mx-16 md:px-16 md:mt-12 items-center">
+    <section id="works" className="mt-20 md:mx-16 md:px-16 md:mt-30 items-center">
       <h2 className="text-6xl text-start md:text-center">My Works</h2>
       <div className="grid grid-cols-1 mt-6 items-center md:grid-cols-2 lg:grid-cols-2 gap-30">
         <div className="md:place-items-center">
           <p className="text-2xl text-[#B3B3B3]">UX/UI Design</p>
-          <div className="hidden md:block md:mt-4 md:w-[600px] md:min-h-screen items-center md:pt-3">
+          <div className="hidden md:block md:mt-4 md:w-[600px] items-center md:pt-3">
             <Swiper
               slidesPerView={1}
               speed={1500} // 1.5 seconds for each slide transition
@@ -116,7 +116,7 @@ export default function WorksSection({
         </div>
         <div className="md:place-items-center">
           <p className="text-2xl text-[#B3B3B3]">Front-End Development</p>
-          <div className="hidden md:block mx-2 md:mt-4 md:w-[600px] md:min-h-screen items-center md:pt-3">
+          <div className="hidden md:block mx-2 md:mt-4 md:w-[600px] items-center md:pt-3">
             <Swiper
               speed={1500} // 1.5 seconds for each slide transition
               modules={[EffectCube, Navigation, Autoplay]}
