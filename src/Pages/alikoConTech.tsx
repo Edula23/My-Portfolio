@@ -10,25 +10,25 @@ export default function AlikoConTech() {
     <div className="min-h-screen  bg-[#000000] text-white flex flex-col relative">
       
       {/* Project Info */}
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-10">
-        <div className=" md:space-y-60 md:mt-16 md:ml-10">
-          <h1 className="text-6xl mb-4 md:text-8xl font-serif">AlikoHub Con-Tech</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 md:min-h-screen items-center mb-10">
+        <div className="flex flex-col items-center md:space-y-60 md:mt-16 md:ml-10 md:min-h-screen">
+          <h1 className="text-6xl mb-4 md:my-auto md:text-8xl font-serif">AlikoHub Con-Tech</h1>
           <a
-            href="#"
+            href="https://www.figma.com/proto/M1evx41iZFunESERduKIz2/MyPortfolio?node-id=176-807&t=TNOCRZzBOOGknvtp-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=176%3A1191"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-block md:mt-auto bg-green-400 hover:bg-green-500 text-black font-medium px-6 py-2 rounded-full transition"
+            className="hidden md:inline-block md:mb-36 mr-auto  bg-green-400 hover:bg-green-500 text-black font-medium px-6 py-2 rounded-full transition"
           >
             View Prototype
           </a>
         </div>
 
         {/* Preview Image */}
-        <div className="flex flex-col mt-10 ml-auto">
+        <div className="w-full mt-10 ml-auto">
           <img
             src={img1}
             alt="Aliko Academy Preview"
-            className="w-40% rounded-lg shadow-lg"
+            className="w-150 rounded-lg shadow-lg mx-auto"
           />
           <a
             href="#"
@@ -45,7 +45,7 @@ export default function AlikoConTech() {
         <img
           src={img2}
           alt="Aliko Academy Overview"
-          className="w-40% order-2 md:order-1 rounded-lg shadow-lg"
+          className="w-150 order-2 md:order-1 rounded-lg shadow-lg"
         />
         <div className="order-1 md:order-2">
           <h2 className="text-4xl font-serif mt-10">Overview</h2>
@@ -73,7 +73,7 @@ export default function AlikoConTech() {
         <img
           src={img2}
           alt="Aliko Academy Overview"
-          className="w-40% rounded-lg shadow-lg"
+          className="w-150 rounded-lg shadow-lg"
         />
       </div>
       <div className="overflow-hidden relative w-full bg-black py-4">
